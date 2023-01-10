@@ -6,14 +6,14 @@ const user = {
   name: 'Tom Cook',
   email: 'tom@example.com',
   imageUrl:
-    'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    'https://cdn.kpbs.org/dims4/default/d6270e2/2147483647/strip/true/crop/1200x739+0+61/resize/1760x1084!/format/webp/quality/90/?url=http%3A%2F%2Fkpbs-brightspot.s3.amazonaws.com%2Ff7%2F82%2F8409815f412c8ff459869830f283%2Fshutterstock-1868218408.jpg',
 }
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
   { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
+  { name: 'Team', href: '#', current: false },
+  { name: 'Resources', href: '#', current: false },
+  { name: 'Discussions', href: '#', current: false },
 ]
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
