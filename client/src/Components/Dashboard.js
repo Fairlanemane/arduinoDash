@@ -10,7 +10,7 @@ const user = {
 };
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
-  { name: "Projects", href: "#", current: false },
+  { name: "Projects1", href: "#", current: false },
   { name: "Gallery", href: "#", current: false },
   { name: "Resources", href: "#", current: false },
   { name: "Discussions", href: "#", current: false },
