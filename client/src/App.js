@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "./Components/Navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Dropmenu from "./Components/Dropmenu";
-import Tabbar from "./Components/Tabbar";
 import Dashboard from "./Components/Dashboard";
+import Home from "./Components/Home";
+import Projects from "./Components/Projects";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const styles = {
   h1: {
@@ -13,9 +13,16 @@ const styles = {
 
 function App() {
   return (
+      <Router>
     <div className="App">
       <Dashboard />
+  <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/projects" element={<Projects/>} />
+
+  </Routes>
     </div>
+</Router>
   );
 }
 
