@@ -2,6 +2,12 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
+const styles={
+  link:{
+    textDecoration:"none"
+  }
+}
+
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
@@ -9,8 +15,8 @@ const user = {
     "https://cdn.kpbs.org/dims4/default/d6270e2/2147483647/strip/true/crop/1200x739+0+61/resize/1760x1084!/format/webp/quality/90/?url=http%3A%2F%2Fkpbs-brightspot.s3.amazonaws.com%2Ff7%2F82%2F8409815f412c8ff459869830f283%2Fshutterstock-1868218408.jpg",
 };
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Projects1", href: "#", current: false },
+  { name: "Dashboard", href: "/", current: true },
+  { name: "Projects", href: "/projects", current: false },
   { name: "Gallery", href: "#", current: false },
   { name: "Resources", href: "#", current: false },
   { name: "Discussions", href: "#", current: false },
@@ -46,7 +52,7 @@ function Dashboard() {
                     <div className="flex-shrink-0">
                       <img
                         className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        src="https://www.freeiconspng.com/thumbs/mushroom-png/white-mushroom-png-5.png"
                         alt="Your Company"
                       />
                     </div>
@@ -56,6 +62,7 @@ function Dashboard() {
                           <a
                             key={item.name}
                             href={item.href}
+                            style={styles.link}
                             className={classNames(
                               item.current
                                 ? "bg-gray-900 text-white"
@@ -107,6 +114,8 @@ function Dashboard() {
                                 {({ active }) => (
                                   <a
                                     href={item.href}
+                                    style={styles.link}
+
                                     className={classNames(
                                       active ? "bg-gray-100" : "",
                                       "block px-4 py-2 text-sm text-gray-700"
@@ -147,6 +156,8 @@ function Dashboard() {
                   {navigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}
+                      style={styles.link}
+
                       as="a"
                       href={item.href}
                       className={classNames(
@@ -190,6 +201,8 @@ function Dashboard() {
                     {userNavigation.map((item) => (
                       <Disclosure.Button
                         key={item.name}
+                        style={styles.link}
+
                         as="a"
                         href={item.href}
                         className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
@@ -204,22 +217,6 @@ function Dashboard() {
           )}
         </Disclosure>
 
-        <header className="bg-white shadow">
-          <div className="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900">
-              Dashboard
-            </h1>
-          </div>
-        </header>
-        <main>
-          <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
-            {/* Replace with your content */}
-            <div className="px-4 py-6 sm:px-0">
-              <div className="h-96 rounded-lg border-4 border-dashed border-gray-200" />
-            </div>
-            {/* /End replace */}
-          </div>
-        </main>
       </div>
     </>
   );
