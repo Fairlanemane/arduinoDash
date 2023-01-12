@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Dashboard from "./Components/Dashboard";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
+//import Signin from "./Components/Signin";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const styles = {
