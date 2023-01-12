@@ -15,16 +15,16 @@ const user = {
     "https://cdn.kpbs.org/dims4/default/d6270e2/2147483647/strip/true/crop/1200x739+0+61/resize/1760x1084!/format/webp/quality/90/?url=http%3A%2F%2Fkpbs-brightspot.s3.amazonaws.com%2Ff7%2F82%2F8409815f412c8ff459869830f283%2Fshutterstock-1868218408.jpg",
 };
 const navigation = [
-  { name: "Dashboard", href: "/", current: true },
+  { name: "Dashboard", href: "/", current: false },
   { name: "Projects", href: "/projects", current: false },
   { name: "Gallery", href: "#", current: false },
   { name: "Resources", href: "#", current: false },
-  { name: "Discussions", href: "#", current: false },
+  { name: "Discussions", href: "/discussions", current: false },
 ];
 const userNavigation = [
   { name: "Your Profile", href: "#" },
   { name: "Settings", href: "#" },
-  { name: "Sign out", href: "#" },
+  { name: "Sign out / Sign in", href: "/signin" },
 ];
 
 function classNames(...classes) {
