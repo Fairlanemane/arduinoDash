@@ -7,7 +7,7 @@ import Signin from "./Components/Signin";
 import Discussions from "./Components/Discussions";
 import Gallery from "./Components/Gallery";
 import Products from "./Components/Products";
-import Member from "./Components/Member";
+import Profile from "./Components/Profile";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -29,7 +29,7 @@ function App() {
       <Route path="/discussions" element={<Discussions/>} />
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/products" element={<Products/>} />
-      <Route path="/member" element={<Member/>} />
+      <Route path="/profile" element={<Profile/>} />
 
   </Routes>
     </div>
