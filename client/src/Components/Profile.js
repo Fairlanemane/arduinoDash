@@ -1,12 +1,12 @@
 import React from 'react'
 import { PaperClipIcon } from '@heroicons/react/20/solid'
 
-function Member() {
+function Profile() {
   return (
     <div className="overflow-hidden bg-white shadow sm:rounded-lg">
       <div className="px-4 py-5 sm:px-6">
-        <h3 className="text-lg font-medium leading-6 text-gray-900">Applicant Information</h3>
-        <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p>
+        <h3 className="text-lg font-medium leading-6 text-gray-900">Profile Information</h3>
+        <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and information.</p>
       </div>
       <div className="border-t border-gray-200">
         <dl>
@@ -68,4 +68,4 @@ function Member() {
     </div>
   )
 }
-export default Member;
+export default Profile;

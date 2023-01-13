@@ -13,10 +13,7 @@ backgroundPosition: 'center',
 backgroundSize: 'cover',
 backgroundRepeat: 'no-repeat',
 },
-chatbox:{
-  //background:"white",
-  //marginTop:"3%"
-},
+
 wrapper:{
  // background:"white",
   //marginTop:"3%"
@@ -24,7 +21,23 @@ wrapper:{
 chatbox: {
   margin: "2%",
   color: "black",
-  //textShadow: "2px 2px 2px black",
+  boxShadow: "0px 0px 10px black",
+  //border: "3px solid green",
+  //textAlign: "center",
+  fontFamily: "Abril Fatface",
+  //letterSpacing: "15px",
+  //fontSize: "xxx-large",
+  background: "white",
+  borderRadius: "10px",
+  //padding: "3%",
+  opacity: ".8",
+  height:"100%",
+  
+},
+feed: {
+  margin: "3%",
+  color: "black",
+  boxShadow: "0px 0px 3px gray",
   //border: "3px solid green",
   textAlign: "center",
   fontFamily: "Abril Fatface",
@@ -33,38 +46,85 @@ chatbox: {
   background: "white",
   borderRadius: "10px",
   //padding: "3%",
-  opacity: ".8",
-  height:"100%"
-},
-feed: {
-  margin: "3%",
-  color: "black",
-  //textShadow: "2px 2px 2px black",
-  //border: "3px solid green",
-  textAlign: "center",
-  fontFamily: "Abril Fatface",
-  //letterSpacing: "15px",
-  //fontSize: "xxx-large",
-  background: "green",
-  borderRadius: "10px",
-  //padding: "3%",
   opacity: "1",
   height:"85vh"
 },
 input: {
   margin: "3%",
   color: "black",
-  //textShadow: "2px 2px 2px black",
+  boxShadow: "0px 0px 3px gray",
   //border: "3px solid green",
-  textAlign: "center",
+  //textAlign: "center",
   fontFamily: "Abril Fatface",
   //letterSpacing: "15px",
   //fontSize: "xxx-large",
-  background: "green",
+  //background: "green",
   borderRadius: "10px",
   //padding: "3%",
   opacity: "1",
   height:"8vh"
+},
+textarea:{
+  height:"8vh",
+  resize:"none",
+  border:"none",
+  borderRadius:"10px",
+},
+button:{
+  width:"10%",
+  backgroundImage: "url(https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Zm9yZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60)",
+backgroundPosition: 'center',
+backgroundSize: 'cover',
+backgroundRepeat: 'no-repeat',
+fontWeight:"x-bold",
+borderRadius:"8px",
+padding:"0%",
+border:"none",
+// boxShadow: "0px 0px 3px gray",
+margin:".6%"
+
+},
+posttext:{
+  // background: "black",
+  // padding:"6%",
+  textShadow: "0px 0px 4px black",
+  color:"white",
+  // borderRadius:"2px",
+  //opacity:"50%",
+  fontSize:"130%"
+},
+postbox:{
+  margin: "1%",
+  color: "black",
+ // boxShadow: "0px 0px 10px black",
+  //border: "3px solid green",
+  textAlign: "left",
+  fontFamily: "Abril Fatface",
+  //letterSpacing: "15px",
+  //fontSize: "xxx-large",
+  background: "#e0e0e0",
+  borderRadius: "10px",
+  //padding: "3%",
+  opacity: "1",
+  padding:"3%",
+  height:"100%",
+ overflowWrap:"break-word"
+ 
+},
+postcontainer:{
+marginTop:"3%",
+padding:"1%",
+width:"100%",
+
+},
+username:{
+fontWeight:"bold"
+},
+userpost:{
+
+},
+timestamp:{
+fontSize:"small",
 },
 
 }
@@ -193,15 +253,30 @@ function Discussions() {
     </Disclosure>
   <div style={styles.container}>
 
-<Stack gap={4} className="col-md-11 mx-auto" style={styles.wrapper} >
+<Stack gap={3} className="col-md-11 mx-auto" style={styles.wrapper} >
         <div style={styles.chatbox}>
           <div style={styles.feed}>
-            chat feed
+            <div style={styles.postcontainer}>
+
+
+            <div style={styles.postbox}>
+              <p style={styles.username}>Kamary Gillespie</p>
+              <p style={styles.timestamp}>@kamarygillespie</p>
+              <p style={styles.userpost}>
+
+Eiusmod nisi aliquip eu voluptate voluptate minim consectetur cillum non. Tempor id qui dolore cillum non enim officia Lorem eiusmod. Officia irure fugiat culpa elit est et veniam laboris labore ea dolor. Ad enim aute adipisicing eiusmod. Anim minim laborum culpa deserunt aliqua laborum quis officia cupidatat voluptate commodo ea.
+              </p>
+              <p style={styles.timestamp}>6:47 pm</p>
+            </div>
+            </div>
+
+
+
             </div>
           <div style={styles.input}>
-          <div class="input-group input-group-sm mb-3">
-  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"/>
-  <button type="button" class="btn btn-dark">Post</button>
+          <div class="input-group input-group-sm mb-6">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style={styles.textarea}></textarea>
+  <button type="button" class="btn" style={styles.button}><span style={styles.posttext}>Post</span></button>
 </div>
             </div>
           

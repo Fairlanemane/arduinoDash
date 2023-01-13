@@ -22,7 +22,7 @@ const navigation = [
   { name: "Discussions", href: "/discussions", current: false },
 ];
 const userNavigation = [
-  { name: "Your Profile", href: "/member" },
+  { name: "Your Profile", href: "/profile" },
   { name: "Settings", href: "#" },
   { name: "Sign out / Sign in", href: "/signin" },
 ];
