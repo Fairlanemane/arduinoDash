@@ -5,9 +5,11 @@ import Home from "./Components/Home";
 import Projects from "./Components/Projects";
 import Signin from "./Components/Signin";
 import Discussions from "./Components/Discussions";
+import Gallery from "./Components/Gallery";
+import Products from "./Components/Products";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const styles = {
+const styles={
   h1: {
     color: "red",
   },
@@ -23,6 +25,8 @@ function App() {
       <Route path="/projects" element={<Projects/>} />
       <Route path="/signin" element={<Signin/>} />
       <Route path="/discussions" element={<Discussions/>} />
+      <Route path="/gallery" element={<Gallery/>} />
+      <Route path="/products" element={<Products/>} />
 
   </Routes>
     </div>
