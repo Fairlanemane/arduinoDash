@@ -7,6 +7,8 @@ import Signin from "./Components/Signin";
 import Discussions from "./Components/Discussions";
 import Gallery from "./Components/Gallery";
 import Products from "./Components/Products";
+import Member from "./Components/Member";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const styles={
@@ -27,6 +29,7 @@ function App() {
       <Route path="/discussions" element={<Discussions/>} />
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/products" element={<Products/>} />
+      <Route path="/member" element={<Member/>} />
 
   </Routes>
     </div>
