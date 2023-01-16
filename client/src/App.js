@@ -8,6 +8,8 @@ import Discussions from "./Components/Discussions";
 import Gallery from "./Components/Gallery";
 import Products from "./Components/Products";
 import Profile from "./Components/Profile";
+import Yourcart from "./Components/Yourcart";
+import Checkoutform from "./Components/Checkoutform";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -30,6 +32,10 @@ function App() {
       <Route path="/gallery" element={<Gallery/>} />
       <Route path="/products" element={<Products/>} />
       <Route path="/profile" element={<Profile/>} />
+      <Route path="/yourcart" element={<Yourcart/>} />
+      {/* <Route path="/checkoutform" element={<checkout/>} /> */}
+
+
 
   </Routes>
     </div>
@@ -38,11 +44,3 @@ function App() {
 }
 
 export default App;
-
-//     <Tabbar />
-//     <Navigation />
-//     <Dropmenu />
-//     <h1   style={styles.h1}>hello world</h1>
-//     <h1 class="text-3xl font-bold underline">
-//   Hello world!
-// </h1>
