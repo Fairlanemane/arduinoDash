@@ -2,9 +2,16 @@ import React from 'react'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
-const userNavigation = [
-    { name: "Yourcart", href: "/yourcart" },
-  ];
+//import { Route, Routes } from 'react-router-dom';
+// const goToCheckout = e => {
+//   history.push(`/checkout/${props.cart.id}`)
+//   localStorage.setItem('cart-id', props.cart.id)
+//   props.setModalOpen(false)
+//   props.setCheckout(true)
+// }
+
+
+
 const products = [
   {
     id: 1,
@@ -127,16 +134,25 @@ function Yourcart() {
                       </div>
                       <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
                       <div className="mt-6">
-                        <a
-                          href="checkout"
-                          className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-                        >
-                          Checkout
-                          <div>
+
                        
+                          <a
+                            key="checkout"
+                            href="/checkout"
+                            
+                            className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+
+                          >
+                           Checkout
+                          </a>
+                        
+
+
+                          <div>
+                        
                           </div>
 
-                        </a>
+                       
                       </div>
                       <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                         <p>
