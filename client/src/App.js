@@ -9,7 +9,7 @@ import Gallery from "./Components/Gallery";
 import Products from "./Components/Products";
 import Profile from "./Components/Profile";
 import Yourcart from "./Components/Yourcart";
-import Checkoutform from "./Components/Checkoutform";
+import Checkout from "./Components/Checkout";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -33,7 +33,7 @@ function App() {
       <Route path="/products" element={<Products/>} />
       <Route path="/profile" element={<Profile/>} />
       <Route path="/yourcart" element={<Yourcart/>} />
-      {/* <Route path="/checkoutform" element={<checkout/>} /> */}
+      <Route path="/checkout" element={<Checkout/>} />
 
 
 
